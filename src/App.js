@@ -1,25 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import MemoryGame from "./MemoryGame";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+function App(){
+  const images =['image1.jpg','image2.jpg','image3.jpg','image4.jpg','image5.jpg','image6.jpg']
+
+return(
+  <div className="App">
+    <MemoryGame images={images}/>
+  </div>
+);
 }
 
 export default App;
